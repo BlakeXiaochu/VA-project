@@ -1,0 +1,8 @@
+cuda: False
+ngpu: 1
+gpu_id: '8'
+data_dir: /home/xiaosy/project/FeatOnly_Dataset/Train
+flist: './filelists/train_filelist.txt'
+workers: 4
+batchSize: 10
+init_deep_model: './checkpoints/model_state_epoch64.pth'

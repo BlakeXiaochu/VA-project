@@ -1,0 +1,12 @@
+cuda: False
+ngpu: 1
+gpu_id: '8'
+data_dir: /home/xiaosy/project/FeatOnly_Dataset/Train
+video_flist: './filelists/Video_Name_List.txt'
+audio_flist: './filelists/Audio_Name_List.txt'
+workers: 4
+batchSize: 40
+checkpoint_folder: ./checkpoints
+init_deep_model: './checkpoints/model_state_epoch64.pth'
+init_bf_model: './checkpoints/bf_detector_stage3.pkl'
+topk: 5

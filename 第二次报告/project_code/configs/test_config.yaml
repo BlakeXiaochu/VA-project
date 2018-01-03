@@ -1,0 +1,12 @@
+cuda: True
+ngpu: 1
+gpu_id: '1'
+data_dir: ../FeatOnly_Dataset/Train
+video_flist: './filelists/Video_Name_List.txt'
+audio_flist: './filelists/Audio_Name_List.txt'
+workers: 4
+batchSize: 40
+checkpoint_folder: ./checkpoints
+init_model1: './checkpoints/model_state_epoch68.pth'
+init_model2: './checkpoints/model_state_epoch94.pth'
+topk: 5

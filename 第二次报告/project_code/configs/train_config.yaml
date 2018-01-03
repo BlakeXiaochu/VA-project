@@ -1,0 +1,23 @@
+cuda: True
+ngpu: 1
+gpu_id: '0'
+data_dir: ../FeatOnly_Dataset/Train
+flist: './filelists/train_filelist.txt'
+workers: 4
+batchSize: 10
+manualSeed: 
+adam: True
+lr: 0.0005
+lr_decay: 0.95
+lr_decay_epoch: 1
+momentum: 0.9
+weight_decay: 0.001
+max_epochs: 300
+print_freq: 5
+epoch_save: 10
+test_epochs: 1
+checkpoint_folder: ./checkpoints
+prefix: 'model'
+model: ''
+gradient_clip: 100
+init_model: ''
